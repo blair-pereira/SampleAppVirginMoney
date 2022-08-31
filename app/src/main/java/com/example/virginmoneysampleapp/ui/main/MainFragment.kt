@@ -7,7 +7,9 @@ import com.example.virginmoneysampleapp.R
 import com.example.virginmoneysampleapp.databinding.FragmentMainBinding
 import com.example.virginmoneysampleapp.util.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainFragment : Fragment(R.layout.fragment_main) {
 
     private lateinit var binding: FragmentMainBinding

@@ -16,7 +16,8 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.virginmoneysampleapp.ui.DetailFragment"
-        android:label="User Details">
+        android:label="User Details"
+        tools:layout="@layout/fragment_detail">
         <action
             android:id="@+id/action_detailFragment_to_mainFragment"
             app:destination="@id/mainFragment" />

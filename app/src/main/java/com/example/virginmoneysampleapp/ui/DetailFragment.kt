@@ -7,8 +7,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.virginmoneysampleapp.R
 import com.example.virginmoneysampleapp.databinding.FragmentDetailBinding
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.ArrayList
 
+@AndroidEntryPoint
 class DetailFragment:Fragment(R.layout.fragment_detail) {
 
     private lateinit var binding: FragmentDetailBinding

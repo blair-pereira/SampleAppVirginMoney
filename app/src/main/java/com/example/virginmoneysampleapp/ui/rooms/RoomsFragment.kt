@@ -16,6 +16,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+
 @AndroidEntryPoint
 class RoomsFragment:Fragment(R.layout.fragment_rooms) {
     private lateinit var binding: FragmentRoomsBinding

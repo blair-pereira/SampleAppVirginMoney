@@ -3,6 +3,7 @@ package com.example.virginmoneysampleapp.ui.main
 import androidx.lifecycle.ViewModel
 import com.example.virginmoneysampleapp.repo.Repository
 import com.example.virginmoneysampleapp.util.UIState
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -10,6 +11,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class MainViewModel @Inject constructor(val repository: Repository) : ViewModel() {
 
     private val _data: MutableStateFlow<UIState> = MutableStateFlow(UIState.loading)
