@@ -8,11 +8,11 @@
         android:id="@+id/table_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/teal_700"
+        android:background="#C40202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabIconTint="@color/white"
-        app:tabIndicatorColor="@color/purple_500"
+        app:tabIndicatorColor="#C40202"
         app:tabSelectedTextColor="@color/black"
         app:tabTextColor="@color/white"/>
 

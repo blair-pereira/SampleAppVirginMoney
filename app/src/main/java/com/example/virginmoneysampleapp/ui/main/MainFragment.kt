@@ -26,10 +26,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         viewPager.adapter = adapter
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            when{
-                position == 0 -> {tab.text = "People"
+            when (position) {
+                0 -> {tab.text = "People"
                 }
-                position == 1 -> tab.text = "Rooms"
+                1 -> {tab.text = "Rooms"
+                }
             }
         }.attach()
     }

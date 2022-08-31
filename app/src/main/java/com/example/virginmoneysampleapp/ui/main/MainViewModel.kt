@@ -16,7 +16,7 @@ class MainViewModel @Inject constructor(val repository: Repository) : ViewModel(
 
     private val _data: MutableStateFlow<UIState> = MutableStateFlow(UIState.loading)
     val data: StateFlow<UIState> get() = _data
-    var my_index: Int = 0
+    var myIndex: Int = 0
 
     fun getData(people: Boolean) {
         _data.value = (UIState.loading)

@@ -5,13 +5,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.virginmoneysampleapp.ui.people.PeopleFragment
 import com.example.virginmoneysampleapp.ui.DetailFragment
+import com.example.virginmoneysampleapp.ui.rooms.RoomsFragment
 
 private const val NUM_TABS = 2
 
 open class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
     :FragmentStateAdapter(fragmentManager,lifecycle) {
-
-
 
     override fun getItemCount(): Int {
         return NUM_TABS
@@ -19,6 +18,6 @@ open class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecyc
 
     override fun createFragment(position: Int) = when (position) {
         0 -> PeopleFragment()
-        else -> DetailFragment()
+        else -> RoomsFragment()
     }
 }

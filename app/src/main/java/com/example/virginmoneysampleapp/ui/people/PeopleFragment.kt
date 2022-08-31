@@ -39,9 +39,9 @@ class PeopleFragment : Fragment(R.layout.fragment_people) {
             viewmodel.getData(true)
         }
 
-        if (viewmodel.my_index == 0) {
+        if (viewmodel.myIndex == 0) {
             viewmodel.getData(true)
-            viewmodel.my_index++
+            viewmodel.myIndex++
         }
 
 

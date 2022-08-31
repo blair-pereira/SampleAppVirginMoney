@@ -1,6 +1,7 @@
 package com.example.virginmoneysampleapp.ui.rooms
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,15 +20,15 @@ class RoomsAdapter(private val items:MutableList<RoomModelItem>,val context: Con
     }
 
     override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
-        val curItem = items[position]
+        var curItem = items[position]
 
         holder.itemView.apply {
-            roomID.text= "Room Id :"+ curItem.id
-            timeID.text= "Set At:"+curItem.created_at
-            maxOccID.text="Max Occupancy:"+curItem.max_occupancy.toString()
+            roomID.text= "Room Id :" + curItem.id
+            timeID.text= "Set At:" + curItem.createdAt
+            maxOccID.text="Max Occupancy:" + curItem.maxOccupancy.toString()
 
 
-            if (curItem.is_occupied){
+            if (curItem.isOccupied == true){
                 checkBoxOccupied.text = "Occupied"
                 checkBoxOccupied.isChecked = false
             }

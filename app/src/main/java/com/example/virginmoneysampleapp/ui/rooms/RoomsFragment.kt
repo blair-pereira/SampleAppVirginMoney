@@ -21,7 +21,6 @@ import kotlinx.coroutines.launch
 class RoomsFragment:Fragment(R.layout.fragment_rooms) {
     private lateinit var binding: FragmentRoomsBinding
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
