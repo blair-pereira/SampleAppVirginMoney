@@ -1,4 +1,4 @@
-package com.example.virginmoneysampleapp.ui.rooms
+package com.example.virginmoneysampleapp.ui
 
 import android.os.Bundle
 import android.view.View
@@ -9,7 +9,7 @@ import com.example.virginmoneysampleapp.R
 import com.example.virginmoneysampleapp.databinding.FragmentDetailBinding
 import java.util.ArrayList
 
-class RoomsFragment:Fragment(R.layout.fragment_detail) {
+class DetailFragment:Fragment(R.layout.fragment_detail) {
 
     private lateinit var binding: FragmentDetailBinding
 
