@@ -42,7 +42,6 @@ class RoomsFragment:Fragment(R.layout.fragment_rooms) {
 
         viewmodel.getData(false)
 
-
         CoroutineScope(Dispatchers.Main).launch {
             viewmodel.data.collect() { state ->
                 when (state) {
