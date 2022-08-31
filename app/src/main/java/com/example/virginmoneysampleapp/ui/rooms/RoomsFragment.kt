@@ -26,6 +26,7 @@ class RoomsFragment:Fragment(R.layout.fragment_rooms) {
         super.onViewCreated(view, savedInstanceState)
 
         val viewmodel by viewModels<MainViewModel>()
+
         binding = FragmentRoomsBinding.bind(view)
 
         val recyclerRooms = binding.roomsRecycler

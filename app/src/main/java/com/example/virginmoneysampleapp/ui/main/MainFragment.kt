@@ -21,7 +21,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         val tabLayout = binding.tableLayout
         val viewPager = binding.pager
-
         val adapter = ViewPagerAdapter(childFragmentManager, lifecycle)
 
         viewPager.adapter = adapter
@@ -29,7 +28,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when{
                 position == 0 -> {tab.text = "People"
-                    //tab.setIcon(R.drawable.ic_launcher_background)
                 }
                 position == 1 -> tab.text = "Rooms"
             }

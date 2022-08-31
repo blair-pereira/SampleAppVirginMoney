@@ -8,10 +8,9 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.virginmoneysampleapp.R
 import com.example.virginmoneysampleapp.databinding.FragmentDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.ArrayList
 
 @AndroidEntryPoint
-class DetailFragment:Fragment(R.layout.fragment_detail) {
+class DetailFragment() : Fragment(R.layout.fragment_detail) {
 
     private lateinit var binding: FragmentDetailBinding
 
@@ -20,9 +19,7 @@ class DetailFragment:Fragment(R.layout.fragment_detail) {
 
         binding = FragmentDetailBinding.bind(view)
 
-
         val myData_list = requireArguments().get("user_details") as ArrayList<String>
-
 
         Glide.with(requireActivity()).load(myData_list[3])
             .apply(RequestOptions().placeholder(R.drawable.user_image)).into(binding.imageView)
